@@ -4,7 +4,7 @@ st.title("Mietraten Rechner")
 
 # Eingaben exakt nach Spalte B
 ek_vs_gesamt = st.number_input("EK + VS", value=330.00, step=0.01)
-mietrate1_gesamt = st.number_input("Erste Mietrate", value=500.00, step=0.01)
+mietrate1_gesamt = st.number_input(" 1. Mietrate", value=500.00, step=0.01)
 mietrate2_gesamt = st.number_input("2.-6. Mietrate", value=699.00, step=0.01)
 tank_gesamt = st.number_input("Betankung", value=60.00, step=0.01)
 auslieferung_gesamt = st.number_input("Auslieferung", value=269.00, step=0.01)
@@ -38,6 +38,7 @@ if st.button("Berechnen"):
     st.write(f"**Summe (B12): {summe:.2f} €**")
     st.write(f"**Marge pro Monat (B13): {marge_pro_monat:.2f} €**")
     st.write(f"**Marge Laufzeit (B14): {marge_laufzeit:.2f} €**")
+
 
 
 
